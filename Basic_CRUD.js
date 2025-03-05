@@ -4,6 +4,7 @@ class User {
     constructor(id, name){
         this.id = id;
         this.name = name;
+        this.isDeleted = false;
     }
 }
 let users = [
@@ -26,9 +27,13 @@ const server = http.createServer(function (req, res) {
             return;
         }
         res.statusCode = 200;
-        res.end(JSON.stringify(users));
-
-        console.log({users});
+        for(let i=0;i<users.length;i++){
+            if(!users[i].isDeleted){
+                res.write(JSON.stringify(users[i]));
+            }
+        }
+        res.end();
+        // console.log({users});
     }
     else if(req.method === 'POST' && req.url === '/register'){
         console.log("Registering data...");
@@ -113,7 +118,7 @@ const server = http.createServer(function (req, res) {
             }
         });
     }
-    else if(req.method === 'DELETE' && /^\/Delete\/\d+$/.test(req.url)){
+    else if(req.method === 'DELETE' && /^\/delete\/\d+$/.test(req.url)){
         const userId = (req.url).split('/').pop();
 
         if(!(/^\d+$/.test(userId))){
