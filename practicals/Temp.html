@@ -1,0 +1,80 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    .center{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container{
+        display:flex;
+    }
+    .cell {
+        width: 40px;
+        height: 40px;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .options {
+        display: none;
+        justify-content: center;
+        gap: 10px;
+    }
+</style>
+
+<body>
+    <div class="center">
+        <div>
+        -->
+        <!-- <form id="myform" onsubmit="startGame(event)"> 
+        <form id="myform" onsubmit="getMatrix(event)">
+            <label for="size">Enter the matrixSize: </label>
+            <input type="number" style="display: block; margin-bottom: 10px;" id="size" min="5" required>
+            <input type="submit" style="display: block; margin-bottom: 10px;" value="Start"/>
+        </form>
+        <div class="container" id="container1">
+           
+        </div>
+        <p id="message">Hello,</p>
+        <div class="options">
+            <button onclick="getHint()">Hint</button>
+            <button onclick="getSolution()">Solution</button>
+        </div>
+    </div>
+    <script>
+        function getMatrix(event){
+            event.preventDefault();
+            for(let i=0;i<5;i++){
+                let rowEl = document.createElement("div");
+                rowEl.classList.add("row");
+                for(let j=0;j<5;j++){
+                    let newCell;
+                    if((i+j)&1){
+                        newCell = document.createElement("div");
+                        newCell.classList.add("cell");
+                        newCell.style.backgroundColor = "blue";
+                    }
+                    else{
+                        newCell = document.createElement("input");
+                        newCell.type = "number";
+                        newCell.min = 1;
+                        newCell.max = 9;
+                    }
+                    rowEl.appendChild(newCell);
+                }
+                document.getElementById("container1").appendChild(rowEl);
+            }
+        }
+    </script>
+</body>
+</html> -->
+

@@ -1,0 +1,3 @@
+- A **prototype** is an object from which other objects inherit properties and methods.
+- used to implement inheritance in JavaScript.
+- When you create a new object, it can inherit properties and methods from its prototype object. This means that if an object needs a property or method and can't find it on itself, it will look up the prototype chain to find it.

@@ -20,7 +20,7 @@ const server = http.createServer(function (req, res) {
     console.log(req.url);
     // console.log(users);
 
-    if(req.method === 'GET' && req.url === '/users'){//smallcase
+    if(req.method === 'GET' && req.url === '/users'){
         if(users.length == 0){
             res.statusCode = 500;
             res.end(JSON.stringify("No user data is available"));
