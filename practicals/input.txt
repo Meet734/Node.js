@@ -1,0 +1,2 @@
+Some data to insert...#Input data to append in the file
+#Input data to append in the file
