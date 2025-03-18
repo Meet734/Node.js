@@ -11,4 +11,4 @@ function fileRename(oldFile, newFile){
     });
 }
 
-fileRename("noName.txt", "Something.txt");
+fileRename("Hello.txt", "tempFile.txt");

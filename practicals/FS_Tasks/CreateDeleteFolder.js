@@ -9,7 +9,6 @@ function createFolder(path){
         console.log("Folder already exist");
     }
 }
-
 function deleteFolder(path){
     try{
         fs.rmdirSync(path);
@@ -21,4 +20,4 @@ function deleteFolder(path){
     }
 }
 createFolder("./newFolder");
-// deleteFolder("./newFolder");
+// deleteFolder("./newFolder");''

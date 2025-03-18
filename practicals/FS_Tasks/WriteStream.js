@@ -14,5 +14,3 @@ writer.close(function (error){
     }
 });
 console.log("#Data written to the file...");
-
-writer.e

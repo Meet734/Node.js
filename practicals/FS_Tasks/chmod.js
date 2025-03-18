@@ -1,6 +1,6 @@
 let fs = require('fs');
 
-fs.chmod('tempFile.txt', 0o0, function (error){
+fs.chmod('tempFile.txt', 0o200, function (error){
     if(error){
         console.log(error.message);
     }

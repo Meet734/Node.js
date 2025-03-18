@@ -1,7 +1,7 @@
 let fs = require('fs');
 
 function writeToFile(path, data){
-    fs.writeFile(path, data, "utf8", function (error, data){
+    fs.writeFile(path, data, "utf8", function (error){
         if(error){
             console.log(error.message);
         }

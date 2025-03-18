@@ -1,4 +1,6 @@
 let fs = require('node:fs');
+let path = require('node:path');
+const { Stream, EventEmitter } = require('node:stream');
 
 //Asynchronous file read
 /*fs.readFile('input.txt', 'utf8',function (error, data) {
@@ -110,3 +112,142 @@ fs.appendFile("input.txt", data, function (error){
 //         console.log(`Data ${bytes} written to the file...`);
 //     });
 // });
+
+
+//Reading Large file
+// let data = fs.readFileSync('demo.txt');
+
+
+// // console.log(data.toString());
+// console.log(data.toString().length)
+
+
+// let reader = fs.createReadStream('demo.txt');
+
+// let total = "";
+// reader.on('data', (data) =>{
+//     // console.log(data);
+//     // console.log(data.toString());
+//     total += data.toString();
+//     console.log(data.length);
+//     debugger
+// }).on('end', () => {
+//     console.log(total.length);
+//     console.log("#File reading complete");
+// }).on('error', (error) => {
+//     console.log(error.message);
+// });
+
+
+// fs.readdir(".", function (error, files) {
+//     if (error) {
+//         console.log(error.message);
+//     }
+//     // console.log(files);
+// })
+// let dir = ["."];
+// let files = [
+//     '.git',
+//     'Basic_CRUD.js',
+//     'demo.txt',
+//     'input.txt',
+//     'Notes',
+//     'practicals',
+//     'README.md',
+//     'tempFile.txt'
+// ];
+// console.log(files.pop());
+// let final = path.join(...dir, files.pop());
+
+// console.log(final);
+
+
+// let temp = ['a','b','c'];
+// let resolvedPath = path.resolve(...temp);
+// console.log({resolvedPath});
+
+// console.log(path.dirname('FS/new folder/Fs.js'));
+
+// console.log(path.basename('FS/new folder/Fs.js'));
+
+// console.log(path.extname('FS/new folder/Fs.js'));
+
+// debugger;
+
+
+// function temp(value){
+//     return new Promise(function (res, rej){
+//         setTimeout(()=>{
+//             console.log(value);
+//             res(value);
+//         }, 3000);
+//     });
+// }
+
+// let ans = temp(1).then(res => {
+//     console.log(res);
+//     temp(2).then((res) => {
+//         console.log(res);
+//     })
+// });
+
+// let ans = temp(1)
+// .then(temp(2))
+// .then(temp(3))
+// .then(temp(4))
+// .catch(function (error){
+//     console.log(error.message);
+// })
+
+
+// console.group("Grouped Logs");
+// console.log("Log 1");
+// console.log("Log 2");
+// console.group("Netsing");
+// console.log("inside the nested group")
+// console.groupEnd();
+// console.log("Out of the group...");
+
+
+// console.groupCollapsed("Collapsed Group");
+// console.log("Log 3");
+// console.log("Log 4");
+// console.groupEnd();
+
+// console.count("Hello");
+// console.count("Hello");
+// console.count("hello again");
+// console.count("Hello");
+
+// console.table([1,2,3,4]);
+
+// console.log(Array.toString());
+// console.log(String.toString());
+
+
+// class Temp{
+//     #num = 123;
+//     constructor(name){
+//         this.name = name;
+//     }
+//     getName = function(){
+//         console.log(this.name);
+//     }
+// }
+
+// function Temp(name){
+//     this.name = name;
+// }
+
+// console.log(typeof Array);
+// console.log(typeof Temp);
+// console.log(Temp.toString());
+
+// console.log("#########");
+// console.log(Array().toString());
+// console.log(Array.isArray.toString());
+
+// console.log(fs.Stats.toString());
+// console.log(fs.statSync.FunctionPrototypeCall.toString());
+// debugger
+

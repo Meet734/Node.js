@@ -1,6 +1,5 @@
 let fs = require('fs');
 
-
 function deleteAllFiles(path){
     let files = fs.readdirSync(path);
     console.log(files);
