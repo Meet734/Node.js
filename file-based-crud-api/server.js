@@ -334,7 +334,15 @@ const server = http.createServer((req, res) => {
         try{
             let sFileData = fs.readFileSync("./public/"+sFileName);
             // console.log(sFileData);
-            res.statusCode = 200;
+            if(sFileName === 'index.html'){
+                res.writeHead(200, {"content-type": "text/html"});
+            }
+            else if(sFileName === 'style.css'){
+                res.writeHead(200, {"content-type": "text/css"});
+            }
+            else if(sFileName === 'script.js'){
+                res.writeHead(200, {"content-type": "text/javascript"});
+            }
             res.write(sFileData);
             res.end();
         }
