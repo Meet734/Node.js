@@ -1,4 +1,5 @@
 let fs = require('node:fs');
+let http = require('http');
 let path = require('node:path');
 const { Stream, EventEmitter } = require('node:stream');
 
@@ -251,3 +252,4 @@ fs.appendFile("input.txt", data, function (error){
 // console.log(fs.statSync.FunctionPrototypeCall.toString());
 // debugger
 
+console.log(http.STATUS_CODES);

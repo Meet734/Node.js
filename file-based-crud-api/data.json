@@ -1,0 +1,72 @@
+[
+  {
+    "iId": "1fdd04a0-057b-11f0-83ac-73ef391882f2",
+    "sName": "Apple",
+    "nQuantity": 500,
+    "sStatus": "Available",
+    "nPrice": 99,
+    "dCreatedAt": "2025-03-20T11:04:42.219Z",
+    "dUpdatedAt": "2025-03-20T11:04:42.219Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "249869d0-057b-11f0-bed1-a90b8f2a1091",
+    "sName": "Banana",
+    "nQuantity": 500,
+    "sStatus": "Available",
+    "nPrice": 99,
+    "dCreatedAt": "2025-03-20T11:04:50.157Z",
+    "dUpdatedAt": "2025-03-20T11:04:50.157Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "3294e360-057b-11f0-aded-0777a9f824dd",
+    "sName": "Orange",
+    "nQuantity": 290,
+    "sStatus": "Available",
+    "nPrice": 199,
+    "dCreatedAt": "2025-03-20T11:05:13.623Z",
+    "dUpdatedAt": "2025-03-20T11:05:13.623Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "46dde970-057b-11f0-ae62-b565db2ec0b7",
+    "sName": "Watermelon",
+    "nQuantity": 100,
+    "sStatus": "Sold Out",
+    "nPrice": 145,
+    "dCreatedAt": "2025-03-20T11:05:47.656Z",
+    "dUpdatedAt": "2025-03-20T11:49:35.556Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "1759da50-0581-11f0-baec-15e19e8ffb70",
+    "sName": "Grapes",
+    "nQuantity": 100,
+    "sStatus": "Available",
+    "nPrice": 100,
+    "dCreatedAt": "2025-03-20T11:47:24.919Z",
+    "dUpdatedAt": "2025-03-20T11:47:24.919Z",
+    "isDeleted": true
+  },
+  {
+    "iId": "88b85ff0-0581-11f0-94c6-d1964197fc13",
+    "sName": "Apple90",
+    "nQuantity": 100,
+    "sStatus": "Sold Out",
+    "nPrice": 145,
+    "dCreatedAt": "2025-03-20T11:50:35.119Z",
+    "dUpdatedAt": "2025-03-20T12:01:32.818Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "c39976e0-0581-11f0-b131-edbb8c286df7",
+    "sName": "Pineapple1",
+    "nQuantity": 0,
+    "sStatus": "Sold Out",
+    "nPrice": 100,
+    "dCreatedAt": "2025-03-20T11:52:13.903Z",
+    "dUpdatedAt": "2025-03-20T11:52:13.903Z",
+    "isDeleted": false
+  }
+]

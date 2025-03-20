@@ -84,24 +84,33 @@ let geek2 = (msg) => {
     console.log("Message from geek2: " + msg);
 };
 
-// Registering geek1 and geek2
-eventEmitter.on('myEvent', geek1);
-eventEmitter.on('myEvent', geek1);
-eventEmitter.once('myEvent1', geek2);
+// // Registering geek1 and geek2
+// eventEmitter.on('myEvent', geek1);
+// eventEmitter.on('myEvent', geek1);
+// eventEmitter.once('myEvent1', geek2);
  
-// Removing listener geek1 that was
-// registered on the line 13
-eventEmitter.removeListener('myEvent', geek1);
-eventEmitter.removeListener('myEvent', geek1);
+// // Removing listener geek1 that was
+// // registered on the line 13
 // eventEmitter.removeListener('myEvent', geek1);
+// eventEmitter.removeListener('myEvent', geek1);
+// // eventEmitter.removeListener('myEvent', geek1);
  
-// Triggering myEvent
-eventEmitter.emit('myEvent1', "Event occurred");
-eventEmitter.emit('myEvent1', "Event occurred");
-eventEmitter.emit('myEvent1', "Event occurred");
+// // Triggering myEvent
+// eventEmitter.emit('myEvent1', "Event occurred");
+// eventEmitter.emit('myEvent1', "Event occurred");
+// eventEmitter.emit('myEvent1', "Event occurred");
 
-// Removing all the listeners to myEvent
-eventEmitter.removeAllListeners('myEvent');
+// // Removing all the listeners to myEvent
+// eventEmitter.removeAllListeners('myEvent');
 
-// Triggering myEvent
-eventEmitter.emit('myEvent', "Event occurred");
+// // Triggering myEvent
+// eventEmitter.emit('myEvent', "Event occurred");
+
+
+eventEmitter.on('event', ()=>{
+    console.log("Hello, event");
+})
+
+
+eventEmitter.once('event');
+console.log(eventEmitter.listeners('event'));
