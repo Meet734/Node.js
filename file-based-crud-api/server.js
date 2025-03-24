@@ -1,76 +1,24 @@
 const http = require('http');
 const uuid = require('uuid');
-const EventEmitter = require('events');
 const fs = require('fs');
+const resolveRoute = require('./routes/APIRoutes');
+const getItem = require('./controllers/itemControllers/getItem');
 
 const PORT = 3000;
-
-let eventEmitter = new EventEmitter();
-eventEmitter.on('itemCreated', function() {
-    console.log("Event: New Item added successfully...");
-}).on('itemUpdated', function() {
-    console.log("Event: Item updated successfully...");
-}).on('itemDeleted', function() {
-    console.log("Event: Item deleted successfully...");
-}).on('error', function() {
-    console.log("Event: Some error occurred...");
-});
-
-//Validating Input Item
-function validateItem(oInputItem, stat){
-    // console.log("Name: ",/^[a-zA-Z0-9]+/.test(oInputItem.sName))
-    if(stat === 'exist'){
-        if(Object.hasOwn(oInputItem, "sName") || Object.hasOwn(oInputItem, "nQuantity") || Object.hasOwn(oInputItem, "nPrice")){
-            if(Object.hasOwn(oInputItem, "sName") && /^[a-zA-Z0-9]+/.test(oInputItem.sName)){
-                console.log(/^\d+/.test(oInputItem.sName));
-                if(!(/^\d+/.test(oInputItem.sName))){
-                    return false;
-                };
-            }
-            if(Object.hasOwn(oInputItem,"nQuantity")){
-                oInputItem.nQuantity = parseInt(oInputItem.nQuantity);
-                console.log("Test: ",oInputItem.nQuantity < 0);
-                if(oInputItem.nQuantity < 0){
-                    return false;
-                }
-            }
-            if(Object.hasOwn(oInputItem,"nPrice")){
-                oInputItem.nPrice = parseInt(oInputItem.nPrice);
-            }
-            return true;
-        }
-        return false;
-    }
-    if(/^[a-zA-Z0-9]+/.test(oInputItem.sName) && /^\d+/.test(oInputItem.nQuantity) && /^\d+/.test(oInputItem.nPrice)){
-        if(/^\d+/.test(oInputItem.sName)){
-            return false;
-        }
-        oInputItem.nQuantity = parseInt(oInputItem.nQuantity);
-        oInputItem.nPrice = parseInt(oInputItem.nPrice);
-        return true;
-    }
-    return false;
-}
-
-class Item {
-    //Name, Quantity, Price, status, createdAt Date, updateAt Date.
-    #aStatus = ['Sold Out', 'Available'];
-    constructor(sName, nQuantity, nPrice){
-        this.iId = uuid.v1();
-        this.sName = sName;
-        this.nQuantity = nQuantity;
-        this.sStatus = this.#aStatus[!nQuantity?0:1];
-        this.nPrice = nPrice;
-        this.dCreatedAt = new Date();
-        this.dUpdatedAt = new Date();
-        this.isDeleted = false;
-    }
-}
 
 const server = http.createServer((req, res) => {
     console.log(req.method);
     console.log(req.url);
 
+    let route = (req.method)+(req.url);
+    console.log({route});
+
+    resolveRoute(req, res);
+    
+    console.log("Control is back to the server...")
+    // console.log(router[route]);
+
+    /*
     if(req.method === 'GET' && (req.url === '/api/data' || req.url === '/api/data/')){
         try{
             let sData = fs.readFileSync('data.json');
@@ -98,7 +46,7 @@ const server = http.createServer((req, res) => {
             res.end();
         }
     }
-    else if(req.method === 'GET' && (req.url).startsWith('/api/data')){
+    if(req.method === 'GET' && (req.url).startsWith('/api/data')){
         let iId = (req.url).split('/').pop();
         // console.log("Validate id: ", uuid.validate(iId));
         // console.log("version of id: ", uuid.version(iId));
@@ -141,7 +89,7 @@ const server = http.createServer((req, res) => {
         }
 
     }
-    else if(req.method === 'POST' && req.url === '/api/data'){
+    if(req.method === 'POST' && req.url === '/api/data'){
         let sInputData = "";
         req.on('data', (data) => {
             //taking request body in chunks
@@ -360,6 +308,7 @@ const server = http.createServer((req, res) => {
         res.write("Invalid path");
         res.end();
     }
+        */
 });
 
 server.listen(PORT, function (){

@@ -67,6 +67,16 @@
     "nPrice": 100,
     "dCreatedAt": "2025-03-20T11:52:13.903Z",
     "dUpdatedAt": "2025-03-20T11:52:13.903Z",
-    "isDeleted": false
+    "isDeleted": true
+  },
+  {
+    "iId": "f7ab8470-063d-11f0-8a96-318118ba4297",
+    "sName": "Pineapple",
+    "nQuantity": 90,
+    "sStatus": "Available",
+    "nPrice": 100,
+    "dCreatedAt": "2025-03-21T10:19:26.648Z",
+    "dUpdatedAt": "2025-03-21T10:19:26.648Z",
+    "isDeleted": true
   }
 ]
