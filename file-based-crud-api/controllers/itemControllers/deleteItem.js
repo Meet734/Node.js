@@ -1,4 +1,4 @@
-const {validateItem, eventEmitter} = require('../../helper');
+const {validateItem, eventEmitter, generateResponse} = require('../../helper');
 const fs = require('fs');
 
 function deleteItem(req, res) {
@@ -22,9 +22,7 @@ function deleteItem(req, res) {
             });
 
             if(bAlreadyDeleted){
-                res.writeHead(400, {"content-type": "application/josn"});
-                res.write("Data not found with this id...");
-                res.end();
+                generateResponse(res, 400, "application/json", "Data not found with this Id...");
                 return;
             }
             //writing back the updated data
@@ -32,19 +30,13 @@ function deleteItem(req, res) {
 
             //event call
             eventEmitter.emit('itemDeleted');
-
-            console.log("Data deleted successfully...");
-            res.writeHead(200, {"content-type": "application/json"});
-            res.write("Data deleted successfully...");
-            res.end();
+            generateResponse(res, 200, "application/json", "Data deleted successfully...");
+            return;
         }
         catch(error){
             // console.log("Error: ", error.message);
             eventEmitter.emit('error');
-
-            res.writeHead(404, {"content-type": "application/json"});
-            res.write("Error: "+error.message);
-            res.end();
+            generateResponse(res, 404, "application/json", `Error found: ${error.message}`);
         }
     }
 }

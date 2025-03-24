@@ -1,5 +1,5 @@
 const fs = require('fs');
-const {eventEmitter} = require('../../helper');
+const {eventEmitter, generateResponse} = require('../../helper');
 
 function getFile(req, res) {
     if(!req || !res){
@@ -10,9 +10,7 @@ function getFile(req, res) {
         console.log(sFileName);
         if(!sFileName){
             eventEmitter.emit('error');
-            res.writeHead(400, {"content-type": "application/json"});
-            res.write("Invalid FileName");
-            res.end();
+            generateResponse(res, 400, "application/json", "Invalid FileName...");
             return;
         }
 
@@ -20,23 +18,19 @@ function getFile(req, res) {
             let sFileData = fs.readFileSync("./public/"+sFileName);
             // console.log(sFileData);
             if(sFileName === 'index.html'){
-                res.writeHead(200, {"content-type": "text/html"});
+                generateResponse(res, 200, "text/html", sFileData);
             }
             else if(sFileName === 'style.css'){
-                res.writeHead(200, {"content-type": "text/css"});
+                generateResponse(res, 200, "text/css", sFileData);
             }
             else if(sFileName === 'script.js'){
-                res.writeHead(200, {"content-type": "text/javascript"});
+                generateResponse(res, 200, "text/javascript", sFileData);
             }
-            res.write(sFileData);
-            res.end();
+            return;
         }
         catch(error){
             eventEmitter.emit('error');
-            // console.log(error.message);
-            res.writeHead(404, {"content-type": "application/json"});
-            res.write("File not found or Error in file reading");
-            res.end();
+            generateResponse(res, 404, "application/json", "File not found or Error in file reading");
         }
     }
 }

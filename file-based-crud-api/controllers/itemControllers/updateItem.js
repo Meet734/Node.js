@@ -1,4 +1,5 @@
-const {validateItem, eventEmitter} = require('../../helper');
+const {validateItem, eventEmitter, generateResponse} = require('../../helper');
+const fs = require('fs');
 const uuid = require('uuid');
 
 function updateItem(req, res) {
@@ -12,9 +13,7 @@ function updateItem(req, res) {
 
         //checking the id is valid
         if(!(uuid.validate(iId))){
-            res.writeHead(400, {"content-type": "application/json"});
-            res.write('Invalid itemId');
-            res.end();
+            generateResponse(res, 400, "application/json", "Invalid itemId...");
             return;
         }
 
@@ -28,11 +27,12 @@ function updateItem(req, res) {
             try{
                 //taking input object of item
                 let oInputItem = JSON.parse(sInputData);
-                // console.log("true: ", Object.hasOwn(oInputItem, "sName") || Object.hasOwn(oInputItem, "nQuantity") || Object.hasOwn(oInputItem, "nPrice"));
-                // console.log(validateItem(oInputItem, 'exist'));
+                console.log("true: ", Object.hasOwn(oInputItem, "sName") || Object.hasOwn(oInputItem, "nQuantity") || Object.hasOwn(oInputItem, "nPrice"));
+                console.log("Some:", validateItem(oInputItem, 'exist'));
                 if(!((Object.hasOwn(oInputItem, "sName") || Object.hasOwn(oInputItem, "nQuantity") || Object.hasOwn(oInputItem, "nPrice")) && validateItem(oInputItem, 'exist'))){
                     //if the input data is not in proper manner or invalid
                     throw new Error("Invalid input data...");
+                    // generateResponse(res, 200, "application/json", "data...");
                 }
 
                 let aItemData = JSON.parse(fs.readFileSync('data.json'));
@@ -72,24 +72,16 @@ function updateItem(req, res) {
                 //event call
                 eventEmitter.emit('itemUpdated');
 
-                res.writeHead(202, {"content-type": "application/json"});
-                res.write("Data added successfully");
-                // console.log(aItemData);
-                res.end();
+                generateResponse(res, 202, "application/json", "Data added successfully...");
+                return;
             }
             catch(error){
-                // console.log("Error in updating data: ", error.message);
                 eventEmitter.emit('error');
 
-                res.writeHead(500, {"content-type": "application/json"});
-                res.write("Error found: "+error.message);
-                res.end();
+                generateResponse(res, 500, "application/json", `Error found: ${error.message}`);
             }
         }).on('error', (error) => {
-            // console.log("Error: ", error.message);
-            res.writeHead(404, {"content-type": "application/json"});
-            res.write("Error: "+error.message);
-            res.end();
+            generateResponse(res, 404, "application/json", `Error: ${error.message}`);
         })
     }
 }

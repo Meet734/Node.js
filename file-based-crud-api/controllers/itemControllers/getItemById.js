@@ -1,5 +1,6 @@
 const fs = require('fs');
 const uuid = require('uuid');
+const {generateResponse} = require("../../helper");
 
 function getItemById(req, res) {
     if(!req || !res){
@@ -7,12 +8,8 @@ function getItemById(req, res) {
     }
     if(req.method === 'GET' && (req.url).startsWith('/api/data')){
         let iId = (req.url).split('/').pop();
-        // console.log("Validate id: ", uuid.validate(iId));
-        // console.log("version of id: ", uuid.version(iId));
         if(!(uuid.validate(iId))){
-            res.writeHead(400, {"content-type": "application/json"});
-            res.write('Invalid itemId');
-            res.end();
+            generateResponse(res, 400, "application/json", "Invalid itemId...");
             return;
         }
 
@@ -28,23 +25,16 @@ function getItemById(req, res) {
             // console.log(data.length);
             //if data is not available to show
             if(!data.length){
-                console.log("No data found with this id");
-                res.writeHead(404, {"content-type": "application/json"});
-                res.write("No Item found with this ID");
-                res.end();
+                generateResponse(res, 404, "application/json", "No item found with this Id...");
                 return;
             }
     
             //if the data is available to show
-            res.writeHead(200, {"content-type": "application/json"});
-            res.write(JSON.stringify(data[0]));
-            res.end();
+            generateResponse(res, 200, "application/json", JSON.stringify(data[0]));
+            return;
         }
         catch(error){
-            console.log("Error in reading data: ", error.message);
-            res.writeHead(500, {"content-type": "application/json"});
-            res.write("Error: "+error.message);
-            res.end();
+            generateResponse(res, 500, "application/json", `Error found: ${error.message}`);
         }
     }
 }

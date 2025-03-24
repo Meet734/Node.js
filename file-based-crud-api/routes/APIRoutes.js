@@ -48,5 +48,6 @@ function resolveRoute(req, res) {
     console.log("Route: ", route);
 
     router[route](req, res);
+    console.log("Back to the route");
 }
 module.exports = resolveRoute;
