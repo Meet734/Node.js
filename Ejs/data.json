@@ -1,0 +1,11 @@
+{
+    "user1": {
+        "name": "Meet",
+        "age": 21
+    },
+    "user2": {
+        "name": "Alice",
+        "age": 21
+    },
+    "users": [1,2,3,4]
+}

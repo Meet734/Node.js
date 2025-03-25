@@ -51,7 +51,11 @@ eventEmitter.on('itemCreated', function() {
 
 
 function generateResponse(res, statusCode, contentType, data){
-    res.writeHead(statusCode, `{"content-type": ${contentType}}`);
+    res.writeHead(statusCode, 
+        {"content-type": contentType,
+        "Access-Control-Allow-Origin" : "*",
+        "Access-Control-Allow-Methods" : "GET, POST, OPTIONS","Access-Control-Max-Age": 2592000},
+    );
     res.write(data);
     res.end();
     return;

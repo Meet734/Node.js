@@ -11,6 +11,7 @@ let router = {
     'GET/api/data/:id': getItemById,
 
     'POST/api/data': addItem,
+    'OPTIONS/api/data': addItem,
 
     'PUT/api/data/:id': updateItem,
 

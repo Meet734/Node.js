@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form id="newForm" name="newItem" method="post">
+        <label for="sName">Name: </label>
+        <input type="string" name="sName">;
+
+        <label for="nQuantity">Qty: </label>
+        <input type="number" name="nQuantity">;
+        
+        <label for="nPrice">Price: </label>
+        <input type="number" name="nPrice">;
+
+        <input type="submit" value="submit">
+    </form>
+
+    <script>
+        async function convertToJson(event){
+            event.preventDefault();
+            let form = document.getElementById("newForm");
+            let formData = {};
+            for (let i = 0; i < form.elements.length; i++) {
+                let element = form.elements[i];
+                if (element.type !== "submit") {
+                    formData[element.name] = element.value;
+                }
+            }
+            let jsonData = JSON.stringify(formData);
+            // console.log(JSON.stringify(jsonData));
+
+            let response = await fetch("http://localhost:3000/api/data", {
+                method: 'POST',
+                body: jsonData
+            });
+
+            console.log(response);
+        }
+        const form = document.querySelector("form");
+			form.addEventListener("submit", convertToJson);
+    </script>
+</body>
+</html>
