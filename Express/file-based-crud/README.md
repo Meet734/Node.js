@@ -15,8 +15,9 @@ This is a Node.js and Express-based CRUD application that manages items using a 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/file-based-crud.git
-   cd file-based-crud```
+   git clone https://github.com/Meet734/Node.js.git
+   cd Express/file-based-crud
+    ```
 
 2. Install dependencies:
 ```bash 
