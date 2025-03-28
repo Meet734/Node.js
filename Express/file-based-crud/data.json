@@ -1,0 +1,132 @@
+[
+  {
+    "iId": "21afd825-c987-4cbb-9754-ad69efa1685a",
+    "sName": "Apple",
+    "nQuantity": 1000,
+    "sStatus": "Available",
+    "nPrice": 145,
+    "dCreatedAt": "2025-03-28T05:14:36.649Z",
+    "dUpdatedAt": "2025-03-28T07:34:38.100Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "129d209c-b88a-414f-8d83-fa168934b3d4",
+    "sName": "Banana",
+    "nQuantity": 800,
+    "sStatus": "Available",
+    "nPrice": 100,
+    "dCreatedAt": "2025-03-28T05:15:14.243Z",
+    "dUpdatedAt": "2025-03-28T05:15:14.243Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "4f037be1-ef99-40e3-ba57-d50bddf4d3e9",
+    "sName": "Bananana",
+    "nQuantity": 100,
+    "sStatus": "Available",
+    "nPrice": 145,
+    "dCreatedAt": "2025-03-28T08:13:12.421Z",
+    "dUpdatedAt": "2025-03-28T09:42:13.783Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "bfd85cb6-6692-4382-93b0-7755f46a24d1",
+    "sName": "Mango",
+    "nQuantity": 800,
+    "sStatus": "Available",
+    "nPrice": 100,
+    "dCreatedAt": "2025-03-28T08:51:10.402Z",
+    "dUpdatedAt": "2025-03-28T08:51:10.402Z",
+    "isDeleted": true
+  },
+  {
+    "iId": "addf5fc7-38d6-4470-913e-faf97a037a3e",
+    "sName": "Watermelon",
+    "nQuantity": 800,
+    "sStatus": "Available",
+    "nPrice": 100,
+    "dCreatedAt": "2025-03-28T09:14:36.425Z",
+    "dUpdatedAt": "2025-03-28T09:14:36.425Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "054ec0b9-ad60-4ffe-96e5-6ccac5f9aadb",
+    "sName": "Watermelons",
+    "nQuantity": 800,
+    "sStatus": "Available",
+    "nPrice": 100,
+    "dCreatedAt": "2025-03-28T09:16:07.124Z",
+    "dUpdatedAt": "2025-03-28T09:16:07.124Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "6dfcc620-92cb-4db6-85db-12b8c4b32fab",
+    "sName": "W",
+    "nQuantity": 800,
+    "sStatus": "Available",
+    "nPrice": 100,
+    "dCreatedAt": "2025-03-28T09:16:43.703Z",
+    "dUpdatedAt": "2025-03-28T09:16:43.703Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "65d8405e-b35e-471d-861f-b9c11fc39c3e",
+    "sName": "Wa",
+    "nQuantity": 800,
+    "sStatus": "Available",
+    "nPrice": 100,
+    "dCreatedAt": "2025-03-28T09:17:41.240Z",
+    "dUpdatedAt": "2025-03-28T09:17:41.240Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "2aeb7314-01c9-4385-af24-bd50f15ec09f",
+    "sName": "Wat",
+    "nQuantity": 800,
+    "sStatus": "Available",
+    "nPrice": 100,
+    "dCreatedAt": "2025-03-28T09:18:17.123Z",
+    "dUpdatedAt": "2025-03-28T09:18:17.123Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "dc4d2e9e-63e0-4ed7-a191-244163595b83",
+    "sName": "Wate",
+    "nQuantity": 800,
+    "sStatus": "Available",
+    "nPrice": 100,
+    "dCreatedAt": "2025-03-28T09:20:03.466Z",
+    "dUpdatedAt": "2025-03-28T09:20:03.466Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "d88fff17-75b3-4f63-b307-8dfeadfabfa4",
+    "sName": "Water",
+    "nQuantity": 10,
+    "sStatus": "Available",
+    "nPrice": 100,
+    "dCreatedAt": "2025-03-28T09:37:22.498Z",
+    "dUpdatedAt": "2025-03-28T09:37:22.498Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "b35ea8c3-6b65-441d-a1dd-86307788bbb3",
+    "sName": "Asasf",
+    "nQuantity": 10,
+    "sStatus": "Available",
+    "nPrice": 100,
+    "dCreatedAt": "2025-03-28T09:37:52.396Z",
+    "dUpdatedAt": "2025-03-28T09:37:52.396Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "cc11efe1-1316-4754-b853-b10abf73ab6f",
+    "sName": "Asassf",
+    "nQuantity": 10,
+    "sStatus": "Available",
+    "nPrice": 100,
+    "dCreatedAt": "2025-03-28T09:41:36.444Z",
+    "dUpdatedAt": "2025-03-28T09:41:36.444Z",
+    "isDeleted": false
+  }
+]

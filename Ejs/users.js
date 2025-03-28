@@ -1,4 +1,4 @@
-const ejs = require('ejs');
+// const ejs = require('ejs');
 
 let users = [1,2,3,4];
 let data = 12;
