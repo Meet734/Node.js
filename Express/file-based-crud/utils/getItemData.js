@@ -9,6 +9,6 @@ exports.getItemData = function() {
         return aItems;
     }
     catch(error){
-        throw new AppError(500, 'fail', 'Internal Server Error...');
+        throw new AppError(500, 'Internal Server Error...');
     }
 }

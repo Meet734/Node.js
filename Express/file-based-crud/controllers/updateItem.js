@@ -2,57 +2,65 @@ const {validateId, nameValidator, quantityValidator, priceValidator, uniqueName,
 const {getItemData} = require('../utils/getItemData');
 const {addItemData} = require('../utils/addItemData');
 const AppError = require('../utils/appError');
+const responseHandler = require('../helper/responseHandler');
+const {status} = require('http-status');
+
 
 exports.updateItem = function(req, res){
-    let iId = req.params.id;
-    let oUpdateItem = req.body;
-
-    console.log({iId});
-    console.log(req.body);
+    const {iId} = req.params.iId;
+    const oUpdateItem = req.body;
+    
     if(!validateId(iId)){
+        // aedasdfa
         //handle this invalid id...
-        throw new AppError(400, 'fail', 'Invalid item Id...');
+        throw new AppError(status.BAD_REQUEST, 'Invalid item Id...');
     }
     if(!validateItem(oUpdateItem)){
-        throw new AppError(400, 'fail', 'Invalid item...');
+        throw new AppError(status.BAD_REQUEST, 'Invalid item data...');
     }
     
-        let aItems = getItemData();
-        let itemUpdated = false;
-        let oItem;
+    const aItems = getItemData();
+    // let oItem;
+    // let itemUpdated = false;
 
-        for(let idx=0;idx<aItems.length;idx++){
-            if(aItems[idx].isDeleted || aItems[idx].iId !== iId){
-                continue;
-            }
-            
-            if(Object.hasOwn(oUpdateItem, 'sName') && nameValidator(oUpdateItem.sName)){
-                if(!uniqueName(oUpdateItem.sName, iId)){
-                    throw new AppError(400, 'fail', 'Item with this name already exist...');
-                }
-                aItems[idx].sName = oUpdateItem.sName;
-            }
-            
-            if(Object.hasOwn(oUpdateItem, 'nQuantity') && quantityValidator(+oUpdateItem.nQuantity)){
-                aItems[idx].nQuantity = +oUpdateItem.nQuantity;
-                let aStatus = ['Available', 'Sold Out'];
-                aItems[idx].sStatus = aStatus[aItems[idx].nQuantity?0:1];
-            }
-            if(Object.hasOwn(oUpdateItem, 'nPrice') && priceValidator(+oUpdateItem.nPrice)){
-                aItems[idx].nPrice = +oUpdateItem.nPrice;
-            }
-        
-            aItems[idx].dUpdatedAt = new Date();
-            addItemData(JSON.stringify(aItems));
-            
-            itemUpdated = true;
-            oItem = aItems[idx];
-            break;
-        }
-        res.json({"Message": "Item updated successfully...", oItem});
+    const idx = aItems.findIndex((oItem) => {
+        return (!oItem.isDeleted && oItem.iId === oUpdateItem.iId);
+    });
 
-    if(!itemUpdated){
-        //item not found with this id...
-        throw new AppError(400, 'fail', 'Item not found with this id...');
+    if(idx === -1){
+        responseHandler(res, status.ACCEPTED, 'Item with this ID not found');
     }
+
+
+    if(Object.hasOwn(oUpdateItem, 'sName') && nameValidator(oUpdateItem.sName)){
+        if(!uniqueName(oUpdateItem.sName, iId)){
+            throw new AppError(status.BAD_REQUEST, 'Item with this name already exist...');
+        }
+        aItems[idx].sName = oUpdateItem.sName;
+    }
+    else if(Object.hasOwn(oUpdateItem, 'sName')){
+        throw new AppError(status.NOT_ACCEPTABLE, 'Item name is invalid...');
+    }
+
+    if(Object.hasOwn(oUpdateItem, 'nQuantity') && quantityValidator(+oUpdateItem.nQuantity)){
+        aItems[idx].nQuantity = +oUpdateItem.nQuantity;
+        let aStatus = ['Available', 'Sold Out'];
+        aItems[idx].sStatus = aStatus[aItems[idx].nQuantity?0:1];
+    }
+    else if(Object.hasOwn(oUpdateItem, 'nQuantity')){
+        throw new AppError(status.NOT_ACCEPTABLE, 'Item quantity is invalid...');
+    }
+
+    if(Object.hasOwn(oUpdateItem, 'nPrice') && priceValidator(+oUpdateItem.nPrice)){
+        aItems[idx].nPrice = +oUpdateItem.nPrice;
+    }
+    else if(Object.hasOwn(oUpdateItem, 'nPrice')){
+        throw new AppError(406, 'Item price is invalid...');
+    }
+
+    aItems[idx].dUpdatedAt = new Date();
+    addItemData(JSON.stringify(aItems));
+
+    const oItem = aItems[idx];
+    responseHandler(res, status.ACCEPTED, 'Item updated successfully', oItem);
 }

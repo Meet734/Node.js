@@ -1,6 +1,8 @@
 const {getItemData} = require('../utils/getItemData');
 const {validateId} = require('../utils/validateItem');
 const AppError = require('../utils/appError');
+const responseHandler = require('../helper/responseHandler');
+const {status} = require('http-status');
 
 exports.getItem = function(req, res){
     console.log("Getting item with id...");
@@ -9,14 +11,19 @@ exports.getItem = function(req, res){
     console.log(iId);
     if(!validateId(iId)){
         //handle invalid id...
-        throw new AppError(400, 'fail', 'Invalid item Id...');
+        throw new AppError(status.BAD_REQUEST, 'Item id is not valid...');
     }
 
-    let aItems = getItemData();
+    const aItems = getItemData();
     
-    aItems = aItems.filter((oItem) => {
+    const idx = aItems.findIndex((oItem) => {
         return (!oItem.isDeleted && oItem.iId == iId);
     });
+
     // console.log(aItems);
+    if(idx === -1){
+        responseHandler(res, status.OK, 'Item not found with this ID');
+    }
     res.json(aItems);
+    responseHandler(res, status.OK, 'Items fetch successfully', aItems);
 }

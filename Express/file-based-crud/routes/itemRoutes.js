@@ -6,14 +6,15 @@ const {updateItem} = require('../controllers/updateItem');
 const {getItem} = require('../controllers/getItem');
 const {getItems} = require('../controllers/getItems');
 const {deleteItem} = require('../controllers/deleteItem');
+const {addItemValidator, updateItemValidator, itemIdValidator, validationResponse} = require('../utils/globalValidator');
 
 console.log("Item route...");
 
 router.route('/').get(getItems);
-router.route('/:id').get(getItem);
-router.route('/').post(addItem);
-router.route('/:id').put(updateItem);
-router.route('/:id').delete(deleteItem);
+router.route('/:iId').get(itemIdValidator, validationResponse, getItem);
+router.route('/').post(addItemValidator, validationResponse, addItem);
+router.route('/:iId').put(updateItemValidator, validationResponse, updateItem);
+router.route('/:iId').delete(itemIdValidator, validationResponse, deleteItem);
 
 // router.get('/', getItems);
 

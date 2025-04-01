@@ -34,7 +34,7 @@ function uniqueName(sName, iId = null){
     let aItems = getItemData();
 
     for(let idx=0;idx<aItems.length;idx++){
-        console.log(aItems[idx].iId, iId);
+        // console.log(aItems[idx].iId, iId);
         if(aItems[idx].iId === iId){
             continue;
         }
