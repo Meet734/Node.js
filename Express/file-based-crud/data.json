@@ -1,1 +1,332 @@
-[{"iId":"21afd825-c987-4cbb-9754-ad69efa1685a","sName":"Jackfruit","nQuantity":100,"sStatus":"Available","nPrice":145,"dCreatedAt":"2025-03-28T05:14:36.649Z","dUpdatedAt":"2025-03-31T08:13:47.304Z","isDeleted":false},{"iId":"129d209c-b88a-414f-8d83-fa168934b3d4","sName":"Banana","nQuantity":800,"sStatus":"Available","nPrice":100,"dCreatedAt":"2025-03-28T05:15:14.243Z","dUpdatedAt":"2025-03-28T05:15:14.243Z","isDeleted":false},{"iId":"4f037be1-ef99-40e3-ba57-d50bddf4d3e9","sName":"K9","nQuantity":100,"sStatus":"Available","nPrice":145,"dCreatedAt":"2025-03-28T08:13:12.421Z","dUpdatedAt":"2025-03-28T12:11:00.323Z","isDeleted":false},{"iId":"bfd85cb6-6692-4382-93b0-7755f46a24d1","sName":"Mango","nQuantity":800,"sStatus":"Available","nPrice":100,"dCreatedAt":"2025-03-28T08:51:10.402Z","dUpdatedAt":"2025-03-28T08:51:10.402Z","isDeleted":true},{"iId":"addf5fc7-38d6-4470-913e-faf97a037a3e","sName":"Watermelon","nQuantity":800,"sStatus":"Available","nPrice":100,"dCreatedAt":"2025-03-28T09:14:36.425Z","dUpdatedAt":"2025-03-28T09:14:36.425Z","isDeleted":false},{"iId":"054ec0b9-ad60-4ffe-96e5-6ccac5f9aadb","sName":"Watermelons","nQuantity":800,"sStatus":"Available","nPrice":100,"dCreatedAt":"2025-03-28T09:16:07.124Z","dUpdatedAt":"2025-03-28T09:16:07.124Z","isDeleted":false},{"iId":"6dfcc620-92cb-4db6-85db-12b8c4b32fab","sName":"W","nQuantity":800,"sStatus":"Available","nPrice":100,"dCreatedAt":"2025-03-28T09:16:43.703Z","dUpdatedAt":"2025-03-28T09:16:43.703Z","isDeleted":false},{"iId":"65d8405e-b35e-471d-861f-b9c11fc39c3e","sName":"Wa","nQuantity":800,"sStatus":"Available","nPrice":100,"dCreatedAt":"2025-03-28T09:17:41.240Z","dUpdatedAt":"2025-03-28T09:17:41.240Z","isDeleted":false},{"iId":"2aeb7314-01c9-4385-af24-bd50f15ec09f","sName":"Wat","nQuantity":800,"sStatus":"Available","nPrice":100,"dCreatedAt":"2025-03-28T09:18:17.123Z","dUpdatedAt":"2025-03-28T09:18:17.123Z","isDeleted":false},{"iId":"dc4d2e9e-63e0-4ed7-a191-244163595b83","sName":"Wate","nQuantity":800,"sStatus":"Available","nPrice":100,"dCreatedAt":"2025-03-28T09:20:03.466Z","dUpdatedAt":"2025-03-28T09:20:03.466Z","isDeleted":false},{"iId":"d88fff17-75b3-4f63-b307-8dfeadfabfa4","sName":"Water","nQuantity":10,"sStatus":"Available","nPrice":100,"dCreatedAt":"2025-03-28T09:37:22.498Z","dUpdatedAt":"2025-03-28T09:37:22.498Z","isDeleted":false},{"iId":"b35ea8c3-6b65-441d-a1dd-86307788bbb3","sName":"Asasf","nQuantity":10,"sStatus":"Available","nPrice":100,"dCreatedAt":"2025-03-28T09:37:52.396Z","dUpdatedAt":"2025-03-28T09:37:52.396Z","isDeleted":false},{"iId":"cc11efe1-1316-4754-b853-b10abf73ab6f","sName":"Asassf","nQuantity":10,"sStatus":"Available","nPrice":100,"dCreatedAt":"2025-03-28T09:41:36.444Z","dUpdatedAt":"2025-03-28T09:41:36.444Z","isDeleted":false},{"iId":"37260c05-007c-4624-a871-76d9724404ac","sName":"Grapes","nQuantity":10,"sStatus":"Available","nPrice":100,"dCreatedAt":"2025-03-28T11:08:48.619Z","dUpdatedAt":"2025-03-28T11:08:48.619Z","isDeleted":false},{"iId":"2b9cdc10-ea31-46d7-abf9-385efe3f539a","sName":"avocado","nQuantity":10,"sStatus":"Available","nPrice":100.9,"dCreatedAt":"2025-03-31T07:46:20.238Z","dUpdatedAt":"2025-03-31T07:46:20.238Z","isDeleted":false},{"iId":"3ce3284e-dc53-471e-8808-929dd334e72c","sName":"newItem","nQuantity":10,"sStatus":"Available","nPrice":100,"dCreatedAt":"2025-03-31T07:47:16.100Z","dUpdatedAt":"2025-03-31T07:47:16.100Z","isDeleted":false},{"iId":"ab1d593d-bc5a-4dc8-afd2-50875fa4fbe0","sName":"newItems","nQuantity":10,"sStatus":"Available","nPrice":0,"dCreatedAt":"2025-03-31T07:56:57.701Z","dUpdatedAt":"2025-03-31T07:56:57.701Z","isDeleted":false},{"iId":"f96d125b-8234-474a-a8fd-74c94f20345a","sName":"newItems12","nQuantity":10,"sStatus":"Available","nPrice":0,"dCreatedAt":"2025-03-31T12:08:44.248Z","dUpdatedAt":"2025-03-31T12:08:44.248Z","isDeleted":false},{"iId":"f9302481-727c-4d70-bd0c-15ae6ca1a4fb","sName":"newItems121","nQuantity":10,"sStatus":"Available","nPrice":0,"dCreatedAt":"2025-03-31T12:09:29.914Z","dUpdatedAt":"2025-03-31T12:09:29.914Z","isDeleted":false},{"iId":"66b6fdf1-1939-4b83-b98e-86641357d5de","sName":"newItem21","nQuantity":10,"sStatus":"Available","nPrice":123,"dCreatedAt":"2025-03-31T12:51:51.404Z","dUpdatedAt":"2025-03-31T12:51:51.404Z","isDeleted":false},{"iId":"19dc2c9b-b91e-482a-a855-39faf7d4981d","sName":"newItem211","nQuantity":10,"sStatus":"Available","nPrice":123,"dCreatedAt":"2025-03-31T12:56:42.321Z","dUpdatedAt":"2025-03-31T12:56:42.321Z","isDeleted":false},{"iId":"a3868627-8526-4bda-951d-3e859ee8a50b","sName":"newItem2","nQuantity":10,"sStatus":"Available","nPrice":123,"dCreatedAt":"2025-03-31T12:57:32.221Z","dUpdatedAt":"2025-03-31T12:57:32.221Z","isDeleted":false},{"iId":"58c51222-1b58-4411-b15b-9bc518e20b6b","sName":"newItem90","nQuantity":10,"sStatus":"Available","nPrice":123,"dCreatedAt":"2025-04-01T07:14:41.467Z","dUpdatedAt":"2025-04-01T07:14:41.467Z","isDeleted":false},{"iId":"adb8f373-b7fc-469f-95fd-c2a9b71b2f6d","sName":"newItem91","nQuantity":10.9,"sStatus":"Available","nPrice":123,"dCreatedAt":"2025-04-01T07:15:05.874Z","dUpdatedAt":"2025-04-01T07:15:05.874Z","isDeleted":false},{"iId":"5e2f0377-d715-4c23-892f-705671152f1a","sName":"newItem92","nQuantity":10.9,"sStatus":"Available","nPrice":123,"dCreatedAt":"2025-04-01T07:53:14.696Z","dUpdatedAt":"2025-04-01T07:53:14.696Z","isDeleted":false},{"iId":"9059753f-370e-448f-8c4a-ff468b521ae1","sName":"newItem93","nQuantity":10.9,"sStatus":"Available","nPrice":123,"dCreatedAt":"2025-04-01T07:54:28.296Z","dUpdatedAt":"2025-04-01T07:54:28.296Z","isDeleted":false},{"iId":"bdf0993b-6645-42d2-a61b-1ff839b44f9e","sName":"newItem94","nQuantity":10.9,"sStatus":"Available","nPrice":123,"dCreatedAt":"2025-04-01T08:03:43.791Z","dUpdatedAt":"2025-04-01T08:03:43.791Z","isDeleted":false},{"iId":"11b32f39-cd48-4685-a281-f7b9fc54c418","sName":"newItem95","nQuantity":10.9,"sStatus":"Available","nPrice":123,"dCreatedAt":"2025-04-01T08:05:08.944Z","dUpdatedAt":"2025-04-01T08:05:08.944Z","isDeleted":false},{"iId":"df70e7c7-8c39-4b96-94fc-b2c9a1556948","sName":"newItem96","nQuantity":10,"sStatus":"Available","nPrice":123,"dCreatedAt":"2025-04-01T08:45:08.195Z","dUpdatedAt":"2025-04-01T08:45:08.195Z","isDeleted":false},{"iId":"6cf9dc48-f679-4d39-a5d3-a76f2d8e39a7","sName":"newItem97","nQuantity":10,"sStatus":"Available","nPrice":123,"dCreatedAt":"2025-04-01T09:07:00.904Z","dUpdatedAt":"2025-04-01T09:07:00.904Z","isDeleted":false},{"iId":"0b90dd9e-0d4d-4deb-89e0-38c8244ff7d2","sName":"newItem98","nQuantity":10,"sStatus":"Available","nPrice":123,"dCreatedAt":"2025-04-01T09:25:03.474Z","dUpdatedAt":"2025-04-01T09:25:03.474Z","isDeleted":false},{"iId":"4594caf1-2e29-424f-b3df-32a30621fa79","sName":"newItem99","nQuantity":10,"sStatus":"Available","nPrice":123,"dCreatedAt":"2025-04-01T09:25:24.943Z","dUpdatedAt":"2025-04-01T09:25:24.943Z","isDeleted":false},{"iId":"01de3b88-d4ec-4f5e-bf68-d90d7cf85720","sName":"newItem100","nQuantity":10,"sStatus":"Available","nPrice":123.9,"dCreatedAt":"2025-04-01T09:26:26.965Z","dUpdatedAt":"2025-04-01T09:26:26.965Z","isDeleted":false}]
+[
+  {
+    "iId": "21afd825-c987-4cbb-9754-ad69efa1685a",
+    "sName": "Jackfruit",
+    "nQuantity": 100,
+    "sStatus": "Available",
+    "nPrice": 145,
+    "dCreatedAt": "2025-03-28T05:14:36.649Z",
+    "dUpdatedAt": "2025-03-31T08:13:47.304Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "129d209c-b88a-414f-8d83-fa168934b3d4",
+    "sName": "Banana",
+    "nQuantity": 800,
+    "sStatus": "Available",
+    "nPrice": 100,
+    "dCreatedAt": "2025-03-28T05:15:14.243Z",
+    "dUpdatedAt": "2025-03-28T05:15:14.243Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "4f037be1-ef99-40e3-ba57-d50bddf4d3e9",
+    "sName": "K9",
+    "nQuantity": 100,
+    "sStatus": "Available",
+    "nPrice": 145,
+    "dCreatedAt": "2025-03-28T08:13:12.421Z",
+    "dUpdatedAt": "2025-03-28T12:11:00.323Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "bfd85cb6-6692-4382-93b0-7755f46a24d1",
+    "sName": "Mango",
+    "nQuantity": 800,
+    "sStatus": "Available",
+    "nPrice": 100,
+    "dCreatedAt": "2025-03-28T08:51:10.402Z",
+    "dUpdatedAt": "2025-03-28T08:51:10.402Z",
+    "isDeleted": true
+  },
+  {
+    "iId": "addf5fc7-38d6-4470-913e-faf97a037a3e",
+    "sName": "Watermelon",
+    "nQuantity": 800,
+    "sStatus": "Available",
+    "nPrice": 100,
+    "dCreatedAt": "2025-03-28T09:14:36.425Z",
+    "dUpdatedAt": "2025-03-28T09:14:36.425Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "054ec0b9-ad60-4ffe-96e5-6ccac5f9aadb",
+    "sName": "Watermelons",
+    "nQuantity": 800,
+    "sStatus": "Available",
+    "nPrice": 100,
+    "dCreatedAt": "2025-03-28T09:16:07.124Z",
+    "dUpdatedAt": "2025-03-28T09:16:07.124Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "6dfcc620-92cb-4db6-85db-12b8c4b32fab",
+    "sName": "W",
+    "nQuantity": 800,
+    "sStatus": "Available",
+    "nPrice": 100,
+    "dCreatedAt": "2025-03-28T09:16:43.703Z",
+    "dUpdatedAt": "2025-03-28T09:16:43.703Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "65d8405e-b35e-471d-861f-b9c11fc39c3e",
+    "sName": "Wa",
+    "nQuantity": 800,
+    "sStatus": "Available",
+    "nPrice": 100,
+    "dCreatedAt": "2025-03-28T09:17:41.240Z",
+    "dUpdatedAt": "2025-03-28T09:17:41.240Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "2aeb7314-01c9-4385-af24-bd50f15ec09f",
+    "sName": "Wat",
+    "nQuantity": 800,
+    "sStatus": "Available",
+    "nPrice": 100,
+    "dCreatedAt": "2025-03-28T09:18:17.123Z",
+    "dUpdatedAt": "2025-03-28T09:18:17.123Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "dc4d2e9e-63e0-4ed7-a191-244163595b83",
+    "sName": "Wate",
+    "nQuantity": 800,
+    "sStatus": "Available",
+    "nPrice": 100,
+    "dCreatedAt": "2025-03-28T09:20:03.466Z",
+    "dUpdatedAt": "2025-03-28T09:20:03.466Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "d88fff17-75b3-4f63-b307-8dfeadfabfa4",
+    "sName": "Water",
+    "nQuantity": 10,
+    "sStatus": "Available",
+    "nPrice": 100,
+    "dCreatedAt": "2025-03-28T09:37:22.498Z",
+    "dUpdatedAt": "2025-03-28T09:37:22.498Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "b35ea8c3-6b65-441d-a1dd-86307788bbb3",
+    "sName": "Asasf",
+    "nQuantity": 10,
+    "sStatus": "Available",
+    "nPrice": 100,
+    "dCreatedAt": "2025-03-28T09:37:52.396Z",
+    "dUpdatedAt": "2025-03-28T09:37:52.396Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "cc11efe1-1316-4754-b853-b10abf73ab6f",
+    "sName": "Asassf",
+    "nQuantity": 10,
+    "sStatus": "Available",
+    "nPrice": 100,
+    "dCreatedAt": "2025-03-28T09:41:36.444Z",
+    "dUpdatedAt": "2025-03-28T09:41:36.444Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "37260c05-007c-4624-a871-76d9724404ac",
+    "sName": "Grapes",
+    "nQuantity": 10,
+    "sStatus": "Available",
+    "nPrice": 100,
+    "dCreatedAt": "2025-03-28T11:08:48.619Z",
+    "dUpdatedAt": "2025-03-28T11:08:48.619Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "2b9cdc10-ea31-46d7-abf9-385efe3f539a",
+    "sName": "avocado",
+    "nQuantity": 10,
+    "sStatus": "Available",
+    "nPrice": 100.9,
+    "dCreatedAt": "2025-03-31T07:46:20.238Z",
+    "dUpdatedAt": "2025-03-31T07:46:20.238Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "3ce3284e-dc53-471e-8808-929dd334e72c",
+    "sName": "newItem",
+    "nQuantity": 10,
+    "sStatus": "Available",
+    "nPrice": 100,
+    "dCreatedAt": "2025-03-31T07:47:16.100Z",
+    "dUpdatedAt": "2025-03-31T07:47:16.100Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "ab1d593d-bc5a-4dc8-afd2-50875fa4fbe0",
+    "sName": "newItems",
+    "nQuantity": 10,
+    "sStatus": "Available",
+    "nPrice": 0,
+    "dCreatedAt": "2025-03-31T07:56:57.701Z",
+    "dUpdatedAt": "2025-03-31T07:56:57.701Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "f96d125b-8234-474a-a8fd-74c94f20345a",
+    "sName": "newItems12",
+    "nQuantity": 10,
+    "sStatus": "Available",
+    "nPrice": 0,
+    "dCreatedAt": "2025-03-31T12:08:44.248Z",
+    "dUpdatedAt": "2025-03-31T12:08:44.248Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "f9302481-727c-4d70-bd0c-15ae6ca1a4fb",
+    "sName": "newItems121",
+    "nQuantity": 10,
+    "sStatus": "Available",
+    "nPrice": 0,
+    "dCreatedAt": "2025-03-31T12:09:29.914Z",
+    "dUpdatedAt": "2025-03-31T12:09:29.914Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "66b6fdf1-1939-4b83-b98e-86641357d5de",
+    "sName": "newItem21",
+    "nQuantity": 10,
+    "sStatus": "Available",
+    "nPrice": 123,
+    "dCreatedAt": "2025-03-31T12:51:51.404Z",
+    "dUpdatedAt": "2025-03-31T12:51:51.404Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "19dc2c9b-b91e-482a-a855-39faf7d4981d",
+    "sName": "newItem211",
+    "nQuantity": 10,
+    "sStatus": "Available",
+    "nPrice": 123,
+    "dCreatedAt": "2025-03-31T12:56:42.321Z",
+    "dUpdatedAt": "2025-03-31T12:56:42.321Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "a3868627-8526-4bda-951d-3e859ee8a50b",
+    "sName": "newItem2",
+    "nQuantity": 10,
+    "sStatus": "Available",
+    "nPrice": 123,
+    "dCreatedAt": "2025-03-31T12:57:32.221Z",
+    "dUpdatedAt": "2025-03-31T12:57:32.221Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "58c51222-1b58-4411-b15b-9bc518e20b6b",
+    "sName": "newItem90",
+    "nQuantity": 10,
+    "sStatus": "Available",
+    "nPrice": 123,
+    "dCreatedAt": "2025-04-01T07:14:41.467Z",
+    "dUpdatedAt": "2025-04-01T07:14:41.467Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "adb8f373-b7fc-469f-95fd-c2a9b71b2f6d",
+    "sName": "newItem91",
+    "nQuantity": 10.9,
+    "sStatus": "Available",
+    "nPrice": 123,
+    "dCreatedAt": "2025-04-01T07:15:05.874Z",
+    "dUpdatedAt": "2025-04-01T07:15:05.874Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "5e2f0377-d715-4c23-892f-705671152f1a",
+    "sName": "newItem92",
+    "nQuantity": 10.9,
+    "sStatus": "Available",
+    "nPrice": 123,
+    "dCreatedAt": "2025-04-01T07:53:14.696Z",
+    "dUpdatedAt": "2025-04-01T07:53:14.696Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "9059753f-370e-448f-8c4a-ff468b521ae1",
+    "sName": "newItem93",
+    "nQuantity": 10.9,
+    "sStatus": "Available",
+    "nPrice": 123,
+    "dCreatedAt": "2025-04-01T07:54:28.296Z",
+    "dUpdatedAt": "2025-04-01T07:54:28.296Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "bdf0993b-6645-42d2-a61b-1ff839b44f9e",
+    "sName": "newItem94",
+    "nQuantity": 10.9,
+    "sStatus": "Available",
+    "nPrice": 123,
+    "dCreatedAt": "2025-04-01T08:03:43.791Z",
+    "dUpdatedAt": "2025-04-01T08:03:43.791Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "11b32f39-cd48-4685-a281-f7b9fc54c418",
+    "sName": "newItem95",
+    "nQuantity": 10.9,
+    "sStatus": "Available",
+    "nPrice": 123,
+    "dCreatedAt": "2025-04-01T08:05:08.944Z",
+    "dUpdatedAt": "2025-04-01T08:05:08.944Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "df70e7c7-8c39-4b96-94fc-b2c9a1556948",
+    "sName": "newItem96",
+    "nQuantity": 10,
+    "sStatus": "Available",
+    "nPrice": 123,
+    "dCreatedAt": "2025-04-01T08:45:08.195Z",
+    "dUpdatedAt": "2025-04-01T08:45:08.195Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "6cf9dc48-f679-4d39-a5d3-a76f2d8e39a7",
+    "sName": "newItem97",
+    "nQuantity": 10,
+    "sStatus": "Available",
+    "nPrice": 123,
+    "dCreatedAt": "2025-04-01T09:07:00.904Z",
+    "dUpdatedAt": "2025-04-01T09:07:00.904Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "0b90dd9e-0d4d-4deb-89e0-38c8244ff7d2",
+    "sName": "newItem98",
+    "nQuantity": 10,
+    "sStatus": "Available",
+    "nPrice": 123,
+    "dCreatedAt": "2025-04-01T09:25:03.474Z",
+    "dUpdatedAt": "2025-04-01T09:25:03.474Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "4594caf1-2e29-424f-b3df-32a30621fa79",
+    "sName": "newItem99",
+    "nQuantity": 10,
+    "sStatus": "Available",
+    "nPrice": 123,
+    "dCreatedAt": "2025-04-01T09:25:24.943Z",
+    "dUpdatedAt": "2025-04-01T09:25:24.943Z",
+    "isDeleted": false
+  },
+  {
+    "iId": "01de3b88-d4ec-4f5e-bf68-d90d7cf85720",
+    "sName": "newItem100",
+    "nQuantity": 10,
+    "sStatus": "Available",
+    "nPrice": 123.9,
+    "dCreatedAt": "2025-04-01T09:26:26.965Z",
+    "dUpdatedAt": "2025-04-01T09:26:26.965Z",
+    "isDeleted": false
+  }
+]

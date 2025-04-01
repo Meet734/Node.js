@@ -13,6 +13,7 @@ const updateItemValidator = [
     body('nPrice').notEmpty().withMessage("Price field is empty").isFloat().withMessage("Price field must be of type float")
 ]
 
+
 const itemIdValidator = [
     param('iId').isUUID().withMessage("Item ID is not valid")
 ]

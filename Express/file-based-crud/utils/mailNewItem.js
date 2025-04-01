@@ -8,6 +8,7 @@ const transporter = nodemailer.createTransport({
         pass: 'pSqxA2Ne1sPk4aP1gj'
     }
 });
+
 function mailNewItem(oNewItem){
 
         // Message object

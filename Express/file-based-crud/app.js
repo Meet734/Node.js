@@ -9,6 +9,7 @@ const publicRoutes = require('./routes/publicRoutes');
 const globalErrHandler = require('./controllers/errorController');
 const AppError = require('./utils/appError');
 
+
 const app = express();
 
 // view engine setup

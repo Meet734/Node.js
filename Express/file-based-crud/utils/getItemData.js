@@ -11,4 +11,5 @@ exports.getItemData = function() {
     catch(error){
         throw new AppError(500, 'Internal Server Error...');
     }
+    
 }

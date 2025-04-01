@@ -54,6 +54,7 @@ exports.updateItem = function(req, res){
     if(Object.hasOwn(oUpdateItem, 'nPrice') && priceValidator(+oUpdateItem.nPrice)){
         aItems[idx].nPrice = +oUpdateItem.nPrice;
     }
+    
     else if(Object.hasOwn(oUpdateItem, 'nPrice')){
         throw new AppError(406, 'Item price is invalid...');
     }

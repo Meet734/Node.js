@@ -9,6 +9,7 @@ function validateItem(oItem){
     if(!(Object.hasOwn(oItem, 'sName') && Object.hasOwn(oItem, 'nQuantity') && Object.hasOwn(oItem, 'nPrice'))){
         return false;
     }
+    
 
     let sItemName = oItem.sName;
     let nItemQty = oItem.nQuantity;
