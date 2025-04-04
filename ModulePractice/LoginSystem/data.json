@@ -1,0 +1,12 @@
+[
+    {
+        "sUsername": "Meet",
+        "sPassword": "Something",
+        "sRole": "Admin"
+    },
+    {
+        "sUsername": "John",
+        "sPassword": "Something too",
+        "sRole": "Developer"
+    }
+]

@@ -18,6 +18,7 @@ const itemIdValidator = [
     param('iId').isUUID().withMessage("Item ID is not valid")
 ]
 
+//send all error messages
 function validationResponse(req, res, next){
     const result = validationResult(req);
     console.log("Generating validating response");
