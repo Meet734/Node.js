@@ -1,1 +1,1 @@
-alicePub
+strict

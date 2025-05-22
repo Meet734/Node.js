@@ -24,3 +24,5 @@ setTimeout(() => {
         }
     });
 }, 3000);
+
+jwt.decode();

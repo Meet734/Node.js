@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Sign-In Demo</title>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+  <h2>Sign in with Google</h2>
+  <div id="g_id_onload"
+       data-client_id="405863668606-jedvtto1pafqh8il2as7l1k6nmbj1iro.apps.googleusercontent.com"
+       data-callback="handleCredentialResponse">
+  </div>
+
+  <div class="g_id_signin" 
+       data-type="standard"
+       data-theme="outline"
+       data-size="large">
+  </div>
+
+  <script>
+    function handleCredentialResponse(response) {
+      console.log("Encoded JWT ID token: " + response.credential);
+
+      fetch('/verify-token', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ token: response.credential })
+      })
+      .then(res => res.json())
+      .then(data => {
+        alert('Welcome, ' + data.name);
+        console.log(data);
+      });
+    }
+  </script>
+</body>
+</html>
